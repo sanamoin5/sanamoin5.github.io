@@ -20,5 +20,10 @@
 
 
     $send = mail($to, $subject, $body, $headers);
+    if( $send == true ) {
+        echo "Message sent successfully...";
+     }else {
+        echo "Message could not be sent...";
+     }
 
 ?>
