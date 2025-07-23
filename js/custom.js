@@ -175,3 +175,29 @@ $(document).ready(function () {
 
     });
 });
+
+
+// add the class to each card you want tilted
+document.querySelectorAll("#experience .timeline-event-copy")
+  .forEach(card => card.classList.add("tilt-card"));
+
+VanillaTilt.init(document.querySelectorAll(".tilt-card"), {
+  max: 8,
+  speed: 400,
+  glare: true,
+  "max-glare": 0.1
+});
+
+
+// in custom.js
+VANTA.FOG({
+  el: "#insta",
+  mouseControls: true,
+  touchControls: false,
+  gyroControls: false,
+  minHeight: 200.00,
+  scale: 1.0,
+  color: 0x222222,
+  backgroundColor: 0x0f0f12,
+  spacing: 30.00
+});

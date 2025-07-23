@@ -978,3 +978,17 @@ fieldset {
         font-size: 10px;
     }
 }
+
+
+.timeline-event-copy {
+  border-radius: 8px;
+  padding: 1rem;
+  /* keep z-index for tilt shadows */
+  will-change: transform;
+}
+.tilt-card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 1rem;
+  will-change: transform;
+}
